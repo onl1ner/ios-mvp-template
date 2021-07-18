@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>DefaultCompletionName</key>
+	<string>Module</string>
+	<key>Kind</key>
+	<string>Xcode.IDEKit.TextSubstitutionFileTemplateKind</string>
+	<key>Identifier</key>
+	<string>com.tsatualdypov.mvp.template.base</string>
+	<key>Description</key>
+	<string>This template will generate a new MVP module</string>
+	<key>Platforms</key>
+	<array>
+		<string>com.apple.platform.iphoneos</string>
+	</array>
+	<key>Options</key>
+	<array>
+		<dict>
+			<key>Identifier</key>
+			<string>productName</string>
+			<key>Required</key>
+			<true/>
+			<key>Name</key>
+			<string>Module:</string>
+			<key>Description</key>
+			<string>Enter the name of your MVP module</string>
+			<key>Type</key>
+			<string>text</string>
+			<key>Default</key>
+			<string>Module</string>
+			<key>NotPersisted</key>
+			<true/>
+		</dict>
+		<dict>
+			<key>Identifier</key>
+			<string>Storyboarded</string>
+			<key>Required</key>
+			<true/>
+			<key>Name</key>
+			<string>Storyboard based</string>
+			<key>Description</key>
+			<string>Choose whether the module in storyboard</string>
+			<key>Type</key>
+			<string>checkbox</string>
+			<key>Default</key>
+			<string>false</string>
+			<key>RequiredOptions</key>
+			<dict>
+				<key>uiChoice</key>
+				<string>XIB</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>Identifier</key>
+			<string>viewClass</string>
+			<key>Required</key>
+			<true/>
+			<key>Name</key>
+			<string>Subclass of:</string>
+			<key>Description</key>
+			<string>What class view should subclass</string>
+			<key>Type</key>
+			<string>class</string>
+			<key>Default</key>
+			<string>UIViewController</string>
+			<key>FallbackHeader</key>
+			<string>#import &lt;UIKit/UIKit.h&gt;</string>
+			<key>Values</key>
+			<array>
+				<string>UIViewController</string>
+				<string>UITableViewController</string>
+				<string>UICollectionViewController</string>
+			</array>
+			<key>NotPersisted</key>
+			<true/>
+		</dict>
+		<dict>
+			<key>Identifier</key>
+			<string>XIB</string>
+			<key>Required</key>
+			<true/>
+			<key>Name</key>
+			<string>Also create XIB file for user interface</string>
+			<key>Description</key>
+			<string>Choose whether to create a XIB file</string>
+			<key>Type</key>
+			<string>checkbox</string>
+			<key>Default</key>
+			<string>false</string>
+			<key>RequiredOptions</key>
+			<dict>
+				<key>Storyboarded</key>
+				<string>false</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>Identifier</key>
+			<string>Routable</string>
+			<key>Required</key>
+			<true/>
+			<key>Name</key>
+			<string>Also create Router class</string>
+			<key>Description</key>
+			<string>Choose whether the module needs router</string>
+			<key>Type</key>
+			<string>checkbox</string>
+			<key>Default</key>
+			<string>true</string>
+		</dict>
+	</array>
+	<key>Summary</key>
+	<string>This template will generate a new MVP module</string>
+</dict>
+</plist>
